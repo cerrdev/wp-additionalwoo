@@ -5,11 +5,11 @@
  */
 class AdditionalWooSettings
 {
-    /*
-     * __construct @description: @since 1.0.0 @created: 06/06/17
-     */
-    function __construct($parent)
-    {
+       /*
+        * __construct @description: @since 1.0.0 @created: 06/06/17
+        */
+        function __construct($parent)
+        {
 		add_action('init', array($this, 'plugin_init'), 1);
 		//add_action('woocommerce_add_cart_item_data', array($this, 'cart_boxed'),10);       
 		//add_action('woocommerce_single_product_summary', array($this, 'cart_boxed'),10);
@@ -17,8 +17,8 @@ class AdditionalWooSettings
 		remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
 		add_action( 'woocommerce_single_product_summary', 'woocommerce_template_loop_add_to_cart', 30 );
 		add_action( 'wp_ajax_product_remove', array($this,'product_remove') );
-		add_action( 'wp_ajax_nopriv_product_remove', array($this,'product_remove') );
-    }
+	  	add_action( 'wp_ajax_nopriv_product_remove', array($this,'product_remove') );
+        }
 	
 	function plugin_init()
 	{
