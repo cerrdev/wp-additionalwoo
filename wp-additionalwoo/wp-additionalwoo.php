@@ -43,7 +43,7 @@ class AdditionalWoo
     }
 
     /*
-     * setup_controllers @description: @since 1.0.0 @created: 28/01/14
+     * setup_controllers @description: @since 1.0.0 @created: 06/06/17
      */
     
     function additionalwoo_set_options()
